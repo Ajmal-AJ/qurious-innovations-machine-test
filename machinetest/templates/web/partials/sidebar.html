@@ -1,0 +1,49 @@
+{% load static %}
+
+<aside id="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <img src="{% static 'web/images/logo.png' %}" class="logo" alt="">
+    </div>
+
+    <ul class="sidebar-nav">
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/home.png' %}" class="nav-icons" alt=""> Dashboard</a>
+        </li>
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/airline.png' %}" class="nav-icons" alt=""> Airline
+                Booking</a>
+        </li>
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/orders.png' %}" class="nav-icons" alt=""> Enquiries &
+                Orders</a>
+        </li>
+
+        <li class="active">
+            <a href="#"><img src="{% static 'web/images/icons/members.png' %}" class="nav-icons" alt=""> Members</a>
+        </li>
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/deal.png' %}" class="nav-icons" alt=""> Deals</a>
+        </li>
+
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/service-provider.png' %}" class="nav-icons" alt="">
+                Service Provider</a>
+        </li>
+
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/service.png' %}" class="nav-icons" alt=""> Services</a>
+        </li>
+        <hr class="divider-line">
+
+        <li>
+            <a href="#"><img src="{% static 'web/images/icons/profile.png' %}" class="nav-icons" alt=""> Profile</a>
+        </li>
+
+        <li>
+            <a href="{% url 'members:admin_logout' %}"><img src="{% static 'web/images/icons/logout.png' %}"
+                    class="nav-icons" alt=""> Logout</a>
+        </li>
+    </ul>
+
+
+</aside>
